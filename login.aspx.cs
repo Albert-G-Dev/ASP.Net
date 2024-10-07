@@ -43,7 +43,7 @@ namespace LeaveApp
                     if (reader.Read())
                     {
                         // User credentials are valid, log in
-                        Session["UserID"] = reader["UserID"];
+                        Session["UserID"] = reader["Id"];
                         Response.Redirect("Gridtable.aspx");
                     }
                     else
